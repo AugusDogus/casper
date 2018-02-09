@@ -1,8 +1,45 @@
-<ion-header>
-
-</ion-header>
-
-
 <ion-content padding>
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center>
+          <img class="logo-header" src="assets/imgs/logo-header.png">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card class="item">
+      <ion-card-header>
+        Login
+      </ion-card-header>
+      <ion-card-content>
 
+        <ion-item>
+          <ion-label>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username" (keyup.enter)="Login()"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" (keyup.enter)="Login()"></ion-input>
+        </ion-item>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col text-center>
+              <button ion-button color="light">Register</button>
+            </ion-col>
+            <ion-col text-center>
+              <button ion-button color="primary" (click)="Login()">Sign In</button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col text-center>
+              <button class="google" ion-button color="primary" (click)="GoogleLogin()"><span>Sign in with Google</span></button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
