@@ -1,3 +1,31 @@
 page-login {
-
+  .content{
+    background-color: color($colors, primary);
+  }
+  .container {
+    z-index: 1;
+  }
+  .item {
+    ion-card-header{
+      text-align: center;
+    }
+    button{
+      display: inline-block;
+    }
+  }
+  .google{
+    width: 191px;
+    height: 46px;
+    background: color($colors, google) url("../assets/imgs/google.svg") no-repeat;
+    span{
+      margin-left: 14px;
+      font-size: 12px;
+    }
+  }
+  .logo{
+    margin-top: 5%;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
 }
