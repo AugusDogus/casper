@@ -2,7 +2,7 @@
 <widget id="chat.caspar.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Casper</name>
     <description>An awesome picture chat app.</description>
-    <author email="augie@luebbers.email" href="http://ionicframework.com/">Augie Luebbers</author>
+    <author email="augie@luebbers.email" href="http://aug.dog/">Augie Luebbers</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
