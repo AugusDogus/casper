@@ -3,20 +3,27 @@ page-login {
     background-color: color($colors, primary);
   }
   .container {
-    z-index: 1;
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
   }
-  .item {
-    ion-card-header{
-      text-align: center;
+  .box {
+    img {
+    margin-top: 1em;
     }
-    button{
-      display: inline-block;
-    }
-  }
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    text-align: center;  }
   .logo{
-    margin-top: 5%;
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
   }
 }

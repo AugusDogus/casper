@@ -12,6 +12,10 @@ import { LoginPage } from '../pages/login/login';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { ENV } from '@app/env';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth'
+
 @NgModule({
   declarations: [
     MyApp,
@@ -23,7 +27,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      scrollPadding: false,
+      scrollAssist: true,
+      autoFocusAssist: false
+    }),
+    AngularFireModule.initializeApp(ENV.FIREBASE_CONFIG),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

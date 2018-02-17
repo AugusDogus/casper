@@ -1,40 +1,38 @@
-<ion-content padding class="content no-scroll">
+<ion-content padding class="content no-scroll" overflow-scroll="false" scroll="false">
   <div class="container">
-    <ion-grid>
-      <ion-row>
-        <ion-col text-center>
-          <img class="logo" src="../assets/imgs/logo.png">
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    <ion-card class="item">
-      <ion-card-header>
-        Login
-      </ion-card-header>
-      <ion-card-content>
+    <div class="box">
+      <img class="logo" src="assets/imgs/logo.png">
+    </div>
+    <div class="box">
+      <ion-card>
+        <ion-card-header>
+          Login
+        </ion-card-header>
+        <ion-card-content>
 
-        <ion-item>
-          <ion-label>Username</ion-label>
-          <ion-input type="text" [(ngModel)]="username" (keyup.enter)="Login()"></ion-input>
-        </ion-item>
+          <ion-item>
+            <ion-label>Username</ion-label>
+            <ion-input type="text" [(ngModel)]="user.email" (keyup.enter)="Login()"></ion-input>
+          </ion-item>
 
-        <ion-item>
-          <ion-label>Password</ion-label>
-          <ion-input type="password" [(ngModel)]="password" (keyup.enter)="Login()"></ion-input>
-        </ion-item>
+          <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password" (keyup.enter)="Login()"></ion-input>
+          </ion-item>
 
-        <ion-grid>
-          <ion-row>
-            <ion-col text-center>
-              <button ion-button color="light">Register</button>
-            </ion-col>
-            <ion-col text-center>
-              <button ion-button color="primary" (click)="Login()">Sign In</button>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
+          <ion-grid>
+            <ion-row>
+              <ion-col text-center>
+                <button ion-button color="light" (click)="Register()">Register</button>
+              </ion-col>
+              <ion-col text-center>
+                <button ion-button color="primary" (click)="Login()">Sign In</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
 
-      </ion-card-content>
-    </ion-card>
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
 </ion-content>
