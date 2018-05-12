@@ -1,7 +1,7 @@
 <ion-content padding class="content no-scroll">
   <div class="container">
     <div class="box">
-      <img class="logo" src="assets/imgs/logo.png">
+      <img class="logo" src="assets/imgs/register.png">
     </div>
     <div class="box">
       <ion-card>
@@ -12,21 +12,26 @@
 
           <ion-item>
             <ion-label color="primary" stacked>Email</ion-label>
-            <ion-input type="text" [(ngModel)]="user.email" (keyup.enter)="Login()"></ion-input>
+            <ion-input type="text" [(ngModel)]="user.email" (keyup.enter)="Register()"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="primary" stacked>Username</ion-label>
+            <ion-input type="text" [(ngModel)]="user.username" (keyup.enter)="Register()"></ion-input>
           </ion-item>
 
           <ion-item>
             <ion-label color="primary" stacked>Password</ion-label>
-            <ion-input type="password" [(ngModel)]="user.password" (keyup.enter)="Login()"></ion-input>
+            <ion-input type="password" [(ngModel)]="user.password" (keyup.enter)="Register()"></ion-input>
           </ion-item>
 
           <ion-grid>
             <ion-row>
               <ion-col text-center>
-                <button ion-button color="light" (click)="Register()">Register</button>
+                <button ion-button color="light" (click)="Back()">Back</button>
               </ion-col>
               <ion-col text-center>
-                <button ion-button color="primary" (click)="Login()">Sign In</button>
+                <button ion-button color="primary" (click)="Register()">Register</button>
               </ion-col>
             </ion-row>
           </ion-grid>
