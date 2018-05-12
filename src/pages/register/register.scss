@@ -1,4 +1,4 @@
-page-login {
+page-register {
   .content{
     background-color: color($colors, primary);
   }
@@ -10,7 +10,7 @@ page-login {
   }
   .box {
     img {
-    margin-top: 1em;
+      margin-top: 1em;
     }
     padding: 1em;
     justify-content: center;
@@ -24,6 +24,7 @@ page-login {
   }
   .logo{
     display: inline-block;
+    transform:scale(2);
     height: 50px;
     width: 50px;
   }

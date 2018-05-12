@@ -2,7 +2,7 @@
 <widget id="chat.caspar.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Casper</name>
     <description>An awesome picture chat app.</description>
-    <author email="augie@luebbers.email" href="http://aug.dog/">Augie Luebbers</author>
+    <author email="augie@luebbers.email" href="http://ionicframework.com/">Augie Luebbers</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -84,5 +84,4 @@
     <allow-navigation href="http://192.168.229.18:8101" />
     <engine name="android" spec="7.0.0" />
     <engine name="ios" spec="4.5.4" />
-    <plugin name="com.telerik.plugins.nativepagetransitions" spec="^0.6.5" />
 </widget>
